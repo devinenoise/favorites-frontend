@@ -11,17 +11,17 @@ export default withRouter(class List extends Component {
             image: char.image,
         })
             .set('Authorization', this.props.user.token)
-
+        console.log('faves', fave.body)
     }
 
     renderButtonOrStar = (char) => {
         const isOnFavoritesList = this.props.favorites.find(person => char.name === person.name);
         if (!isOnFavoritesList) {
 
-            return <button className="myButton" onClick={(e) => this.makeFavorite(char)}>Make favorite</button>
+            return <button className="myButton" onClick={(e) => this.makeFavorite(char)}>Make Favorite</button>
         }
 
-        return <span role="img">✔️</span>
+        return <button disabled>Favorited ✔️</button>
     }
 
     render() {

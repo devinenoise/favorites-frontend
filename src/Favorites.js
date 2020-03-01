@@ -10,12 +10,13 @@ export default class Favorites extends Component {
     componentDidMount = async () => {
         const faves = await request.get('https://shielded-tor-15379.herokuapp.com/api/me/favorites').set('Authorization', this.props.user.token);
 
-        this.setState( { characters: faves.body })
+        this.setState({ characters: faves.body })
     }
 
     render() {
         return (
             <div>
+                <h2 id="faves">Your Favorites</h2>
                 <List characters={this.state.characters} />
             </div>
         )

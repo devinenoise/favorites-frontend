@@ -16,7 +16,7 @@ export default class App extends Component {
   state = { user: null }
 
   setUser = user => {
-    this.setState({user: user.body });
+    this.setState({ user: user.body });
   }
 
   render() {
@@ -25,10 +25,10 @@ export default class App extends Component {
         <header><h1>Search Your Favorite Rick And Morty Character</h1></header>
 
         <Router>
-          <div className = "nav">
-          <Link to="/favorites">Favorites</Link>
-          <Link to="/">Search</Link>
-          <Link to="/login">Login</Link>
+          <div className="nav">
+            <Link to="/favorites">Favorites</Link>
+            <Link to="/">Search</Link>
+            <Link to="/login">Login</Link>
           </div>
           <Switch>
 

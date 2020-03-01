@@ -12,8 +12,7 @@ export default class Search extends Component {
     }
 
     componentDidMount = async () => {
-        const faves = await request.get('https://shielded-tor-15379.herokuapp.com/api/me/favorites')
-            .set('Authorization', this.props.user.token);
+        const faves = await request.get('https://shielded-tor-15379.herokuapp.com/api/me/favorites').set('Authorization', this.props.user.token);
 
         this.setState({ favorites: faves.body })
     }
