@@ -55,7 +55,10 @@ button {
 .char-box {
     margin: 10px;
     font-size: 20px;
-    display:block;
+    display:inline-block;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    padding: 10px;
     
 }
 
@@ -71,4 +74,6 @@ button {
     font-size: 21px;
 }
 
-        
+#stats {
+    
+}

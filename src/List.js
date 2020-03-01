@@ -30,11 +30,11 @@ export default withRouter(class List extends Component {
                 {
 
                     this.props.characters.map(char => <div key={char.name} className="char-box">
-                        <div>{char.name}</div>
+                        <div id="stats">Name: {char.name}</div>
                         <img
                             alt={char.image}
                             src={char.image} />
-                        <div>{char.species}</div>
+                        <div id="stats">Species: {char.species}</div>
                         {
                             this.props.location.pathname !== '/favorites'
                             && this.renderButtonOrStar(char)

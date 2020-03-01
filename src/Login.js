@@ -5,7 +5,7 @@ export default class Login extends Component {
 
     handleSignIn = async (e) => {
         e.preventDefault();
-        const user = await request.post('http://localhost:3000/api/auth/signin', {
+        const user = await request.post('https://shielded-tor-15379.herokuapp.com/api/auth/signin', {
             email: this.state.signInEmail,
             password: this.state.signInPassword,
             display_name: this.state.signInName,
@@ -36,8 +36,8 @@ export default class Login extends Component {
                 <form onSubmit={this.handleSignIn}>
                     Email: <input onChange={(e) => this.setState({ signInEmail: e.target.value })} />
 
-                    Password: <input onChange={(e) => this.setState({ signInPassword: e.target.value })} type="password"/>
-                    
+                    Password: <input onChange={(e) => this.setState({ signInPassword: e.target.value })} type="password" />
+
                     Name: <input onChange={(e) => this.setState({ signInName: e.target.value })} />
                     <button className="myButton">Sign In</button>
                 </form>
