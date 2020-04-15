@@ -1,0 +1,84 @@
+* {
+    text-align: center;
+    margin: 0;
+    color: white;
+    
+}
+
+h1 {
+    font-size: 86px;
+}
+body {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e94c32d0-ae33-4efd-9716-83ebd0652503/dahrufl-3808681f-4a90-44b8-98fe-4a23355b3139.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9lOTRjMzJkMC1hZTMzLTRlZmQtOTcxNi04M2ViZDA2NTI1MDMvZGFocnVmbC0zODA4NjgxZi00YTkwLTQ0YjgtOThmZS00YTIzMzU1YjMxMzkucG5nIn1dXX0.3Hntv0T7oVWSMjT3H1dMgWfwY6ACG3Wqz_GSmBBNBBk');
+    position: relative;
+}
+
+input {
+    margin-top: 20px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    width: 175px;
+    background: transparent;
+    margin: 10px;
+    border-bottom: 2px solid white;
+}
+
+input:focus {
+    outline:none;   
+}
+
+button {
+    color: black;
+    margin-left: 10px;
+}
+
+.myButton{
+        display:inline-block;
+        padding: .5em 2em;
+        margin:0 0.3em 0.5em 5;
+        border:0.2em solid rgba(255,255,255,0);
+        border-radius:2em;
+        box-sizing: border-box;
+        text-decoration: uppercase;
+        font-family: arial ,sans-serif;
+        font-weight:400;
+        color:black;
+        text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+        text-align:center;
+        transition: all 0.1s;
+}
+
+.myButton:hover{
+    border-color:#80C690;
+}
+
+.char-box {
+    margin: 10px;
+    font-size: 20px;
+    display:inline-block;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    color: #80C690;
+}
+
+.nav a:hover {
+    color: white;
+    font-size: 21px;
+}
+
+#signin, #signup {
+    margin-top: 50px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
